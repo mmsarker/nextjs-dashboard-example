@@ -11,6 +11,7 @@ import {
 import { formatCurrency } from './utils';
 
 export async function fetchRevenue() {
+  await new Promise((resolve) => setTimeout(resolve, 3000));
   // Add noStore() here to prevent the response from being cached.
   // This is equivalent to in fetch(..., {cache: 'no-store'}).
 
